@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="607.0" prefWidth="906.0" style="-fx-background-color: #E7D7C7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="beautycenter.InvoiceController">
+   <children>
+      <Pane layoutX="280.0" layoutY="5.0" prefHeight="614.0" prefWidth="460.0">
+         <children>
+            <Circle fill="#f2ede9" layoutX="219.0" layoutY="193.0" radius="171.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2ede9" height="318.0" layoutX="48.0" layoutY="179.0" stroke="#f7f2f200" strokeType="INSIDE" width="342.0" />
+            <TextArea fx:id="area" editable="false" layoutX="74.0" layoutY="164.0" prefHeight="290.0" prefWidth="291.0" wrapText="true">
+               <font>
+                  <Font name="ITC Avant Garde Gothic Book" size="25.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets left="20.0" right="10.0" />
+               </opaqueInsets></TextArea>
+            <Label fx:id="label" layoutX="122.0" layoutY="466.0" minHeight="16" minWidth="69" prefHeight="98.0" prefWidth="207.0" text="Beauty" textFill="#686461">
+               <font>
+                  <Font name="ITC Avant Garde Gothic Book" size="54.0" />
+               </font>
+            </Label>
+            <Label fx:id="label2" layoutX="132.0" layoutY="515.0" minHeight="16" minWidth="69" prefHeight="85.0" prefWidth="197.0" text="Center" textFill="#686461">
+               <font>
+                  <Font name="ITC Avant Garde Gothic Book" size="47.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

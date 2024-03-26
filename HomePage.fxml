@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="607.0" prefWidth="906.0" style="-fx-background-color: #E7D7C7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="beautycenter.HomePageController">
+   <children>
+      <Pane layoutX="213.0" layoutY="163.0" prefHeight="320.0" prefWidth="531.0">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="165.0" layoutX="30.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Picture3.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="techButton" layoutX="319.0" layoutY="248.0" onAction="#goTechno" style="-fx-background-color: #CFC5C3;" text="Technology">
+               <effect>
+                  <DropShadow color="#b8ac9b" />
+               </effect>
+               <font>
+                  <Font name="Lucida Fax Regular" size="24.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="200.0" fitWidth="171.0" layoutX="318.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Picture4.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="treatmentButton" layoutX="23.0" layoutY="248.0" onAction="#goTreatment" style="-fx-background-color: #CFC5C3;" text="Treatments">
+               <effect>
+                  <DropShadow color="#b8ac9b" />
+               </effect>
+               <font>
+                  <Font name="Lucida Fax Regular" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <HBox alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="906.0" style="-fx-border-color: #A29084; -fx-background-color: #D4B2A9;">
+         <children>
+            <Button fx:id="homebutton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="35.0" prefWidth="105.0" style="-fx-background-color: #CFC5C3;" text="Home">
+               <HBox.margin>
+                  <Insets left="250.0" right="10.0" />
+               </HBox.margin>
+               <effect>
+                  <DropShadow color="#a19998" />
+               </effect>
+            </Button>
+            <Button fx:id="trbutton" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="35.0" prefWidth="105.0" style="-fx-background-color: #CFC5C3;" text="Treatments">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+               <effect>
+                  <DropShadow color="#a19998" />
+               </effect>
+            </Button>
+            <Button fx:id="techbutton" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="35.0" prefWidth="105.0" style="-fx-background-color: #CFC5C3;" text="Technology">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+               <effect>
+                  <DropShadow color="#a19998" />
+               </effect>
+            </Button>
+            <Button fx:id="aboutbutton" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="35.0" prefWidth="105.0" style="-fx-background-color: #CFC5C3;" text="About Us">
+               <effect>
+                  <DropShadow color="#a19998" />
+               </effect>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets bottom="5.0" />
+         </opaqueInsets>
+         <effect>
+            <DropShadow color="#a19998" />
+         </effect>
+      </HBox>
+   </children>
+</AnchorPane>
